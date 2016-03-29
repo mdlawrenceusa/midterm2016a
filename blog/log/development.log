@@ -375,3 +375,118 @@ Migrating to CreateComments (20160329172615)
             FROM sqlite_temp_master
             WHERE name='index_comments_on_article_id' AND type='index'
 [0m
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-03-29 13:52:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 1958ms (Views: 1870.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:06 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-29 13:52:07 -0400
+
+
+Started DELETE "/articles/1" for 127.0.0.1 at 2016-03-29 13:52:13 -0400
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sWJjIjOjRKAnsd7px8EFzC2TK5TuENu03j8/7hVWSJU=", "id"=>"1"}
+Filter chain halted as #<Proc:0x72510d8@c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articles/1" for 127.0.0.1 at 2016-03-29 13:52:18 -0400
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sWJjIjOjRKAnsd7px8EFzC2TK5TuENu03j8/7hVWSJU=", "id"=>"1"}
+Filter chain halted as #<Proc:0x72510d8@c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
